@@ -1,0 +1,11 @@
+KPI,Value,Definition / note
+Total Net Revenue,"15,99,44,143.45",All cleaned rows; includes orphan SKUs because net revenue does not require master cost/category.
+Matched Net Revenue,"15,94,15,304.56",Rows with a valid SKU master match.
+CM2,"3,97,18,975.97",Only matched SKUs; COGS requires UNIT_COGS from master.
+Blended ROAS,6.03,"Matched rows, Net Revenue / Ad Spend."
+Overall Return Rate,0.05,Matched rows with valid units/returns.
+Cleaners ROAS,388.08%,Cleaners net revenue / ad spend.
+Cleaners Ad Spend Share,65.13%,Share of matched-category ad spend.
+D2C Return Rate,12.63%,D2C returns / valid units.
+Marketplace Return Rate,3.74%,All non-D2C channels combined.
+Forecast MAPE,0.01,One-month holdout MAPE from linear regression on monthly total Net Revenue.
