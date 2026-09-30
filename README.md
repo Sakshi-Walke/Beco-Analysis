@@ -1,5 +1,5 @@
 # Beco-Analysis
-# BECO Data Analyst Executive – Sales Analytics Case Study
+# BECO Data Analyst Executive -Sales Analytics Case Study
 
 ## Project Overview
 
