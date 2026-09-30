@@ -1,0 +1,19 @@
+import pandas as pd
+import matplotlib.pyplot as plt
+
+# Load data
+df = pd.read_csv("../data/sales_data_cleaned.csv")
+
+# Convert date
+df["sale_date"] = pd.to_datetime(df["sale_date"])
+
+# Monthly sales
+monthly_sales = (
+    df.groupby(df["sale_date"].dt.to_period("M"))["sales_amount"]
+    .sum()
+    .reset_index()
+)
+
+monthly_sales["sale_date"] = monthly_sales["sale_date"].dt.to_timestamp()
+
+print(monthly_sales)
